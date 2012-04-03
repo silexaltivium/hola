@@ -11,6 +11,7 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 |------------------------------------------------------------
 */
 asasassaasssassssassa
+echo('Hola como estaa??');
 
 # Include files
 require_once( _AppPath.'libraries/app.php' );
