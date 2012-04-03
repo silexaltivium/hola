@@ -11,11 +11,6 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 |------------------------------------------------------------
 */
 
-# Define constants
-define( 'BASEPATH', realpath( dirname( __FILE__ ) ) . '/' );
-define( '_AppPath', 'application/' );
-define( '_UploadPath', 'uploads/' );
-
 
 # Include files
 require_once( _AppPath.'libraries/app.php' );
