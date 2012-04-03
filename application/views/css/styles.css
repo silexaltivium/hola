@@ -1,0 +1,907 @@
+/* ------------------------------- */
+/* HTML Elements
+/* ------------------------------- */
+body {
+ background: url(images/bg_light.png) center center no-repeat, url(images/bg_body.png) right bottom;
+ font: 12px/20px "Droid Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+ol {
+ list-style: decimal
+}
+ul {
+ list-style: disc
+}
+p {
+
+}
+.clear {
+	clear: both;
+	display: block;
+}
+/*
+-----------------------
+     Typography
+-----------------------
+*/
+a {
+ color: inherit;
+ text-decoration: inherit;
+}
+a:hover,
+a:focus {
+ color: #466779
+}
+h6 {
+ font-size: 12px
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ margin-bottom: 0.5em;
+ color: #565656;
+}
+h1,
+h2,
+h3 {
+ font-weight: normal
+}
+h4,
+h5,
+h6,
+b,
+strong,
+caption,
+th,
+thead,
+dt,
+legend {
+ font-weight: bold
+}
+/* ------------------------------- */
+/* Structure
+/* ------------------------------- */
+.container {
+ width: 960px;
+ margin: 0px auto 0px auto;
+}
+.container.file {
+ width: 208px;
+ margin-top: 150px;
+ text-align: center;
+}
+#main {
+ margin: 40px auto 60px auto
+}
+#wrapper {
+ -webkit-box-shadow: 0px 0px 9px #c2c2c2;
+ -moz-box-shadow: 0px 0px 9px #c2c2c2;
+ box-shadow: 0px 0px 9px #c2c2c2;
+}
+/*Notice Box*/
+#main.notice.container {
+ width: 350px
+}
+#main.notice.container #wrapper #content {
+ padding: 30px
+}
+#wrapper #content {
+ background: #f7f9f9 url("images/sprites.png") repeat-x 0px -280px;
+ padding: 0px 18px 10px 18px;
+ padding-bottom: 50px;
+}
+/* ------------------------------- */
+/* File Categories
+/* ------------------------------- */
+#categories {
+ border-top-right-radius: 5px;
+ border-top-left-radius: 5px;
+ -webkit-border-top-right-radius: 5px;
+ -webkit-border-top-left-radius: 5px;
+ -moz-border-radius-topleft: 5px;
+ -moz-border-radius-topright: 5px;
+ background: url("images/sprites.png") repeat-x 0px -237px;
+ height: 43px;
+ color: #d7d7d7;
+ padding: 0px 0px 0px 1px;
+ list-style: none;
+}
+#categories li {
+ display: block;
+ height: 40px;
+ float: left;
+ margin-top: 2px;
+}
+#categories li.active {
+ background: url("images/bg_cat_active.png")
+}
+#categories li:hover {
+ background: url("images/bg_cat_hover.png")
+}
+#categories li a {
+ color: #d7d7d7;
+ text-decoration: none;
+ height: 29px;
+ padding: 12px 20px 0px 20px;
+ display: block;
+ background: url("images/bg_cat_sep.png") no-repeat right top;
+}
+/*Icons*/
+.icon {
+ background: url("images/sprites.png") no-repeat;
+ height: 17px;
+ width: 15px;
+ float: left;
+ margin-right: 8px;
+}
+.icon.all {
+ background-position: 0px 0px
+}
+.icon.image {
+ background-position: -15px 0px;
+ width: 17px;
+}
+.icon.audio {
+ background-position: -33px 0px;
+ width: 16px;
+}
+.icon.video {
+ background-position: -50px 0px;
+ width: 14px;
+}
+.icon.text {
+ background-position: -66px 0px;
+ width: 11px;
+}
+.icon.archive {
+ background-position: -78px 0px;
+ width: 11px;
+}
+.icon.other {
+ background-position: -90px 0px;
+ width: 11px;
+}
+.icon.upload {
+ background-position: -102px 0px;
+ width: 24px;
+ height: 19px;
+}
+.icon.grid {
+ background-position: -142px 0px;
+ width: 22px;
+ margin-right: 0px;
+}
+.icon.list {
+ background-position: -164px 0px;
+ width: 22px;
+ margin-right: 0px;
+}
+.icon.pie {
+ background-position: -127px 0px;
+ margin-right: 5px;
+ width: 15px;
+}
+.icon.users {
+ background-position: -187px 0px;
+ width: 20px;
+ height: 18px;
+ margin-top: -1px;
+}
+.icon.trash {
+ background-position: -208px 0px;
+ margin-right: 5px;
+ width: 15px;
+}
+.icon.delete {
+ background-position: -225px 0px;
+ width: 21px;
+ height: 21px;
+}
+.icon.downloads {
+ background-position: -247px 0px;
+ width: 9px;
+ margin-right: 4px;
+}
+.icon.lock {
+ background-position: -257px 0px;
+ width: 9px;
+ height: 11px;
+ margin-top: -2px;
+}
+.icon.link {
+ background-position: -267px 0px;
+ width: 11px;
+ height: 8px;
+}
+.icon.folder {
+ background-position: -279px 0px;
+ width: 24px;
+ height: 16px;
+ margin-top: 1px;
+}
+.icon.sfolder {
+ background-position: -303px 0px;
+ width: 14px;
+ height: 8px;
+}
+.icon.stats {
+ background-position: -303px 0px;
+ width: 19px;
+ height: 17px;
+}
+.icon.config {
+	background-position: -323px 0px;
+	width: 20px;
+	height: 21px;
+}
+/* ------------------------------- */
+/* Forms
+/* ------------------------------- */
+input {
+ background: #f7f7f7 url("images/bg_input.png") repeat-x;
+ height: 25px;
+ border: 1px solid #d9d9d9;
+ padding: 0px 10px 0px 10px;
+ line-height: 25px;
+ outline: none;
+ -webkit-box-shadow: 0px 1px 0px #ffffff;
+ -moz-box-shadow: 0px 1px 0px #ffffff;
+ box-shadow: 0px 1px 0px #ffffff;
+ -moz-border-radius: 4px;
+ -webkit-border-radius: 4px;
+ border-radius: 4px;
+}
+input[type=text] {
+ margin-bottom: 5px
+}
+input.check {
+ height: 12px;
+ width: 12px !important;
+ margin-right: 8px;
+}
+button,
+.button {
+ font-size: 12px;
+ font-weight: bold;
+ color: #FFFFFF;
+ padding: 6px 10px;
+ height: 30px;
+ line-height: 15px;
+ margin-right: 5px;
+ margin-top: 15px;
+ width: auto !important;
+ border: 1px solid #464b4f;
+ /*background*/
+ background: url(images/bg_button.png) repeat-x top;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ -webkit-border-radius: 4px;
+ box-shadow: 0px 1px 3px #A7A7A7;
+ -webkit-box-shadow: 0px 1px 3px #A7A7A7;
+ -moz-box-shadow: 0px 1px 3px #A7A7A7;
+ text-shadow: 0px -1px 0px #252628;
+}
+button.inline {
+	margin-top: 0px;
+}
+button.small,
+.button.small {
+ height: 20px;
+ padding: 0px 10px;
+ margin-top: 2px;
+ margin-left: 5px;
+}
+button:hover,
+.button:hover,
+button:focus,
+.button:focus {
+ background-image: url(images/bg_button_hover.png)
+}
+label {
+ display: block;
+ /*float: left;;;
+ width: 80px;*/
+ line-height: 25px;
+ color: #444444;
+ font-size: 12px;
+ margin: 0px 0px 0px 5px;
+}
+.help {
+ font-style: italic;
+ font-size: 11px;
+ color: #777;
+}
+/*Placeholders*/
+.placeholders {
+ position: relative
+}
+.placeholders label {
+ font-size: 12px;
+ color: #cac8c8;
+ position: absolute;
+ top: 3px;
+ left: 5px;
+ cursor: text;
+}
+.placeholders.focus label {
+ color: #666
+}
+.placeholders.active label {
+ visibility: hidden
+}
+/* ------------------------------- */
+/* Messages
+/* ------------------------------- */
+.message {
+ padding: 5px 0px 5px 5px;
+ position: relative;
+ margin-bottom: 10px;
+ border: dotted 1px !important;
+ display: none;
+}
+.message.valid {
+ background: #E5EDC4
+}
+.message.invalid {
+ background: #F6B9B9;
+ color: #C32727;
+}
+.message.info {
+ background-color: #D9EFFF;
+ color: #2E6093 !important;
+}
+.message.alert {
+ background-color: #FFF3BB;
+ color: #9E660C !important;
+}
+.close {
+ position: absolute;
+ right: 3px;
+ top: 0px;
+ font-weight: bold;
+ font-size: 10px;
+ padding: 5px;
+ cursor: pointer;
+}
+/* ------------------------------- */
+/* Login Form
+/* ------------------------------- */
+#on-login {
+
+}
+#on-login input {
+ width: 270px;
+ margin-bottom: 15px;
+}
+#on-login .submit {
+ width: auto;
+ margin-bottom: 0px;
+}
+/* ------------------------------- */
+/* File
+/* ------------------------------- */
+#fileparent {
+ position: relative
+}
+#file {
+ background: #f1f4f5;
+ border: 1px solid #d2d2d2;
+ width: 174px;
+ height: auto;
+ padding: 18px 18px 10px 18px;
+ -webkit-box-shadow: 0px 0px 9px #c2c2c2;
+ -moz-box-shadow: 0px 0px 9px #c2c2c2;
+ box-shadow: 0px 0px 9px #c2c2c2;
+}
+#file h1 {
+ color: #666666;
+ font-weight: bold;
+ margin-top: 10px;
+ margin-bottom: 0px;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
+#file .inner {
+ border: 2px solid #e1e4e5;
+ width: 170px;
+ height: 155px;
+ vertical-align: middle;
+ text-align: center;
+ display: table-cell;
+}
+#file .inner img {
+ display: block;
+ margin: 0px auto;
+}
+/* ------------------------------- */
+/* Custom File Input
+/* ------------------------------- */
+.fakefile {
+ cursor: pointer;
+ display: inline-block;
+ overflow: hidden;
+ position: relative;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ float: right;
+}
+.fakefile .button {
+ cursor: pointer;
+ display: inline-block;
+ background: red;
+}
+.fakefile:hover {
+ background: #ececec
+}
+.fakefile input {
+ font-size: 100px;
+ cursor: pointer;
+ height: 20px;
+ width: 92px;
+ position: absolute;
+ left: 6px;
+ top: 0;
+ filter: alpha(opacity=1);
+ -moz-opacity: 0.01;
+ opacity: 0.01;
+ padding: 0px;
+}
+#loading {
+ background: url("images/loading.gif") no-repeat center center;
+ height: 26px;
+ width: 16px;
+ float: right;
+ display: none;
+}
+/* ------------------------------- */
+/* Download
+/* ------------------------------- */
+#download {
+ text-align: center;
+ width: 208px !important;
+}
+#download-lock {
+ margin-top: 20px
+}
+#download .placeholders label {
+ left: 40px
+}
+#dirlink {
+ box-shadow: 0px 0px 0px #ffffff;
+ color: #545454;
+ text-shadow: 0px 1px 0px #FFFFFF;
+ margin-top: 20px;
+ display: block;
+}
+/* ------------------------------- */
+/* Buttons
+/* ------------------------------- */
+.button.download,
+.button.locked,
+.button.upload {
+ width: 170px !important;
+ height: 63px;
+ border: none;
+ text-indent: -9999px;
+ -webkit-box-shadow: 0px 0px 0px #ffffff;
+ -moz-box-shadow: 0px 0px 0px #ffffff;
+ box-shadow: 0px 0px 0px #ffffff;
+ background: url("images/sprites.png") no-repeat;
+ cursor: pointer;
+}
+/*Download Button*/
+.button.download {
+ background-position: 0px -22px
+}
+.button.download:hover {
+ background-position: 0px -85px
+}
+/*Locked Button*/
+.button.locked {
+ margin-top: 10px;
+ background-position: -171px -22px;
+}
+.button.locked:hover {
+ background-position: -171px -85px
+}
+.button:active {
+ opacity: 0.85
+}
+/* ------------------------------- */
+/* Separator
+
+/* ------------------------------- */
+.separator {
+ background: url("images/bg_sep.png") repeat-x center bottom;
+ height: 2px;
+ margin-bottom: 10px;
+ clear: both;
+ display: block;
+}
+/* ------------------------------- */
+/* Toolbar
+/* ------------------------------- */
+#toolbar {
+ color: #969797;
+ background: url("images/bg_sep.png") repeat-x center bottom;
+ text-shadow: 0px 1px 0px #ffffff;
+ padding: 15px 0px 10px 0px;
+}
+#toolbar .item {
+ color: #969797;
+ font-size: 11px;
+ text-shadow: 0px 1px 0px #ffffff;
+ text-decoration: none;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ padding: 4px 6px 2px 6px;
+ height: 20px;
+ float: left;
+}
+#toolbar .item.active {
+ background: #ececec
+}
+#toolbar .item:hover {
+ background: #ececec
+}
+#toolbar #fileupload,
+#toolbar #statistics_show,
+#toolbar #settings_show {
+ float: right
+}
+/*Views*/
+#toolbar #views {
+ list-style: none;
+ padding: 10 0px 0px 0px;
+}
+#toolbar #views li {
+ float: left
+}
+#toolbar #views li .icon {
+ text-indent: -9999px;
+ cursor: pointer;
+ margin-top: 1px;
+}
+#toolbar #views {
+ float: left;
+ margin-right: 10px;
+}
+#toolbar #views li.title {
+ margin-right: 5px
+}
+#toolbar #views li.view {
+ margin-right: 5px
+}
+#toolbar #views li.view:hover {
+ background: #ececec
+}
+#multiple {
+ display: none;
+ background: url("images/bg_sep.png") repeat-x center top;
+ padding-top: 10px;
+ margin-top: 8px;
+}
+#multiple .movefolder {
+ display: none
+}
+/* ------------------------------- */
+/* Settings
+/* ------------------------------- */
+#settings {
+	
+}
+#settings .password {
+	margin-bottom: 15px;
+}
+#settings input[type=text] {
+	width: 92%;
+}
+/* ------------------------------- */
+/* Statistics
+/* ------------------------------- */
+#statistics p {
+ background: white;
+ border: 1px solid #dfe3e4;
+ padding: 5px;
+ box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+ float: left;
+ margin-right: 15px;
+}
+#statistics p span {
+ color: #466779;
+ font-weight: bold;
+}
+#statistics .adminstats {
+ margin-top: 20px
+}
+/* ------------------------------- */
+/* Files
+/* ------------------------------- */
+#files {
+ width: 940px;
+ margin-top: 25px;
+}
+#files .file {
+ width: 168px;
+ float: left;
+ margin-right: 18px;
+ border: 1px solid #dfe3e4;
+ margin-bottom: 50px;
+ box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+ position: relative;
+}
+#files .file .select {
+ position: absolute;
+ height: 12px;
+ top: 3px;
+ left: 3px;
+ display: none;
+}
+#files .file .inner {
+ width: 168px;
+ height: 155px;
+ vertical-align: middle;
+ text-align: center;
+ display: table-cell;
+}
+#files .file .inner img {
+ display: block;
+ margin: 0px auto;
+}
+/*Tools*/
+#files .file .inner .tools {
+ background-color: rgba(0,0,0,0.7);
+ height: 15px;
+ position: absolute;
+ bottom: 21px;
+ width: 148px;
+ padding: 5px 10px 0px 10px;
+ display: none;
+ border-top: 1px solid #151515;
+ overflow: hidden;
+}
+#files .file .inner .tools .shortlink {
+ color: white;
+ background-color: rgba(0,0,0,0.7);
+ display: none;
+ clear: both;
+ position: absolute;
+ top: 20px;
+ width: 90%;
+ left: 10px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+}
+#files .file .inner .tools .shortlink:hover {
+ background: #466779
+}
+#files .file .inner .tools input {
+ height: 15px;
+ width: 128px;
+ line-height: 15px;
+ -webkit-box-shadow: 0px 0px 0px #ffffff;
+ -moz-box-shadow: 0px 0px 0px #ffffff;
+ box-shadow: 0px 0px 0px #ffffff;
+}
+#files .file .inner .tools .item {
+ float: left;
+ color: #FFFFFF;
+ font-size: 11px;
+ line-height: 8px;
+}
+#files .file .inner .tools .item.lock,
+#files .file .inner .tools .item.link,
+#files .file .inner .tools .item.folder {
+ float: right
+}
+#files .file .inner .tools .item .lock {
+ margin-right: 0px
+}
+#files .file .title {
+ background: #FFFFFF;
+ height: 22px;
+}
+#files .file .title a {
+ margin-left: 8px;
+ display: block;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+ padding: 2px 0px 2px 0px;
+ font-size: 12px;
+ color: #666666;
+}
+#files .file .delete {
+ display: none;
+ position: absolute;
+ top: -8px;
+ right: -17px;
+ z-index: 999;
+}
+#files .file:hover .delete {
+ display: block
+}
+/* ------------------------------- */
+/* File Types
+/* ------------------------------- */
+.filetype {
+ background: url("images/bg_files.png") no-repeat;
+}
+.filetype.other {
+ background-position: 0px 0px
+}
+.filetype.archives {
+ background-position: -170px 0px
+}
+.filetype.audio {
+ background-position: -340px 0px
+}
+.filetype.video {
+ background-position: -510px 0px
+}
+.filetype.text {
+ background-position: -680px 0px
+}
+.filetype.image {
+ background: url("images/transparent.png")
+}
+.filetype.image.nothumb {
+ background: url("images/bg_files.png") no-repeat;
+ background-position: -850px 0px
+}
+/* ------------------------------- */
+/* Dialogs
+/* ------------------------------- */
+#lean_overlay {
+ position: fixed;
+ z-index: 100;
+ top: 0px;
+ left: 0px;
+ height: 100%;
+ width: 100%;
+ background: #000;
+ display: none;
+}
+.dialog {
+ width: 500px;
+ padding: 30px;
+ display: none;
+ background: #f7f9f9 url("images/sprites.png") repeat-x 0px -280px;
+ border-radius: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+ -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+ -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+.dialog.settings {
+	width: 300px;	
+}
+/* ------------------------------- */
+/* Users
+/* ------------------------------- */
+#users input[type=text] {
+ width: 130px
+}
+#userscreate {
+ margin-bottom: 15px
+}
+#manageusers {
+ float: right !important
+}
+.user {
+ border-bottom: 1px solid #e9e9e9;
+ padding: 10px;
+ margin-bottom: 10px;
+ cursor: pointer;
+}
+.user .trash {
+ float: right
+}
+.user .edit {
+ border-top: 1px solid #e9e9e9;
+ margin-top: 8px;
+ padding-top: 10px;
+ display: none;
+}
+.hidden {
+ display: none !important
+}
+.visible {
+ display: block !important
+}
+.user .edit label {
+ margin: 0px
+}
+.user .edit .text {
+ margin-bottom: 8px
+}
+.user .edit .submit {
+ float: right
+}
+.user .edit input.text {
+ margin-left: 8px
+}
+.user .edit input.check {
+ margin-left: 15px
+}
+.user.active {
+ background: white;
+ border: 1px solid #dfe3e4;
+ padding: 10px;
+ box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+}
+/* ------------------------------- */
+/* Folders
+/* ------------------------------- */
+/*Folders navigation*/
+#foldersview {
+ position: relative;
+ background: url("images/bg_sep.png") repeat-x center top;
+ padding-top: 10px;
+ margin-top: 8px;
+ display: none;
+}
+#foldersview .manage {
+ float: right;
+ margin-right: 15px;
+}
+#foldersview .hide {
+ float: right;
+ margin-right: 15px;
+}
+#managefolders {
+ float: right !important
+}
+#folders .folder {
+ border-bottom: 1px solid #e9e9e9;
+ padding: 10px;
+ margin-bottom: 10px;
+}
+#folders .folder .items {
+ float: right;
+ margin-right: 8px;
+ background: white;
+ padding: 0px 4px 0px 4px;
+ border: 1px solid #dfe3e4;
+}
+#folders .folder .trash {
+ float: right
+}
+/* ------------------------------- */
+/* Header
+/* ------------------------------- */
+#header {
+ margin: 0px 0px 20px 0px;
+ padding: 0px 20px 10px 20px;
+ background: url("images/bg_sep_footer.png") repeat-x center bottom;
+ color: #545454;
+ text-shadow: 0px 1px 0px #FFFFFF;
+}
+#header #logout {
+ margin-top: -5px;
+ background: none;
+ border: none;
+ -webkit-box-shadow: 0px 0px 0px #ffffff;
+ -moz-box-shadow: 0px 0px 0px #ffffff;
+ box-shadow: 0px 0px 0px #ffffff;
+ color: #545454;
+ text-shadow: 0px 1px 0px #FFFFFF;
+ text-transform: capitalize;
+ cursor: pointer;
+}
+/* ------------------------------- */
+/* Install
+/* ------------------------------- */
+form#install input {
+ width: 270px
+}
+body#install .message {
+ display: block
+}
